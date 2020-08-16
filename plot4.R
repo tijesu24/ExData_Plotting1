@@ -16,10 +16,11 @@ raw$DateTime = as.POSIXct(paste(raw$Date,
 needed <- subset(raw, DateTime >= as.Date("2007-02-01")
                  & DateTime < as.Date("2007-02-03"))
 
-par(mfcol = c(2,2))
-
 #set graphics device
 png(filename = "plot4.png")
+
+par(mfcol = c(2,2))
+
 
 #plot4
 #topleft
